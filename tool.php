@@ -501,7 +501,7 @@ UTILIZANDO &$errror
 
 
 
-    #Valida si una targeta de Credito Es valido por el el algoritmo.
+    #Verifica si una tarjeta de banco aplica el codigo luhn y cumple con el formato de una tarjeta
     public function EsCC($cc,&$error=null)
     {
         if(preg_match_all('/^([(4?|5?|6?)][\d]{15}|[3][\d]{14})$/',$cc))
